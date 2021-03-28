@@ -19,6 +19,7 @@ services:
       - ./LocalSettings.php:/var/www/html/LocalSettings.php
   database:
     volumes:
+      - ./backup/backup.sql:/docker-entrypoint-initdb.d/backup.sql
       - my-wiki-db:/var/lib/mysql
     image: mariadb
     restart: always
