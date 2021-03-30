@@ -23,6 +23,7 @@ services:
   database:
     volumes:
       - my-wiki-db:/var/lib/mysql
+      - ./backup/backup.sql:/docker-entrypoint-initdb.d/backup.sql
     image: mariadb
     restart: always
     environment:
