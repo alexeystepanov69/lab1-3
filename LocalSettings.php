@@ -14,7 +14,7 @@
 if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
 }
-
+$wgShowExceptionDetails = true;
 
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
@@ -73,7 +73,7 @@ $wgMemCachedServers = [];
 
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
-$wgEnableUploads = false;
+$wgEnableUploads = true;
 $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
 
@@ -101,14 +101,14 @@ $wgShellLocale = "C.UTF-8";
 # Site language code, should be one of the list in ./languages/data/Names.php
 $wgLanguageCode = "ru";
 
-$wgSecretKey = "2c56e34f0548cfe159c33205371c4dfa4257b5d88dfc2d115a3e49e898fe76c3";
+$wgSecretKey = "02637f60d34c57b768d40ecc50df9bddb73b941ebf922c2d60b72b29fe133707";
 
 # Changing this will log out all existing sessions.
 $wgAuthenticationTokenVersion = "1";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "ae1537d95e2f9a5d";
+$wgUpgradeKey = "d33a125f00e3efd2";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
